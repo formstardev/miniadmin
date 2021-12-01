@@ -24,7 +24,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build:style": "tailwind build src/assets/css/vendor/tailwind.css -c tailwindcss-config.js -o src/assets/css/vendor/tailwind.generated.css",
-    "prestart": "yarn build:style",
     "prebuild": "yarn build:style"
   },
   "eslintConfig": {
