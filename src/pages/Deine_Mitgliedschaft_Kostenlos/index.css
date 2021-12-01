@@ -1,0 +1,98 @@
+.content {
+    padding: 0px 30px;
+}
+.membership {
+    background-color: #359EA4;
+    height: 300px;
+    border-radius: 5px;
+    display: flex;
+}
+.mem-1 {
+    width: 50%;
+    padding: 40px;
+}
+.mem-1-title {
+    color: white;
+    font-weight: 500;
+    font-size: 30px;
+}
+.mem-2 {
+    width: 50%;
+}
+.mem-image {
+    height: 300px;
+    width: 80%;
+    float: right;
+    border-radius: 5px;
+}
+.sect-2-color {
+    background-color: #D2ECEE;
+}
+.sect-2 {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500px;
+}
+.sect-3 {
+    display: flex;
+    background-color: #ECF7F8;
+    border-radius: 5px;
+    margin-top: 20px;
+    height: 120px;
+    padding: 20px;
+}
+.sect-3-1 {
+    width: 10%;
+}
+.sect-3-2 {
+    width: 70%;
+    font-size: 24px;
+}
+.sect-3-2-span {
+    font-weight: 500;
+}
+.sect-3-3 {
+    width: 20%;
+}
+.btn-1 {
+    background-color: #6F0452;
+    border: none;
+    border-radius: 5px;
+    height: 60px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.sect-4 {
+    margin-top: 50px;
+}
+.sect-title {
+    font-size: 30px;
+    font-weight: 500;
+}
+.sect-5 {
+    display: flex;
+}
+.sect-5-sub {
+    width: 33%;
+}
+.sect-6 {
+    display: flex;
+}
+.sect-6-sub {
+    width: 48%;
+}
+.sect-7 {
+    display: flex;
+    margin-top: 60px;
+}
+.sect-7-sub {
+    width: 33vw;
+    margin-left: 0%;
+    border: 1px solid #E2E2E2;
+}
+.lbtn-sect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

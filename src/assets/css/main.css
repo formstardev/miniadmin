@@ -1,0 +1,23 @@
+#root {
+  height: 100%;
+}
+#root > section.ant-layout {
+  min-height: 100%;
+}
+
+.ant-drawer-content-wrapper {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* 
+
+@media only screen and (min-width: 640px) {
+  .drawer-custom-right .ant-drawer-content-wrapper {
+    min-width: 80%;
+  }
+} */
+
+.ant-layout-content {
+  display: flex;
+}
