@@ -4,12 +4,30 @@ import { ProvideLayout } from './contexts';
 import './assets/css'
 import reportWebVitals from './reportWebVitals';
 import Routes from './routes';
-
+import {store} from './redux/store'; 
+import { Provider } from 'react-redux';
+import {
+  ApolloProvider,
+  ApolloClient,
+  createHttpLink,
+  InMemoryCache
+} from '@apollo/client';
+const httpLink = createHttpLink({
+  uri: 'http://localhost:4000'
+});
+const client = new ApolloClient({
+  link: httpLink,
+  cache: new InMemoryCache()
+});
 ReactDOM.render(
   <React.StrictMode>
-      <ProvideLayout>
-        <Routes />
-      </ProvideLayout>
+    <ApolloProvider client={client}>
+      <Provider store={store}>
+        <ProvideLayout>
+          <Routes />
+        </ProvideLayout>
+      </Provider>
+    </ApolloProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

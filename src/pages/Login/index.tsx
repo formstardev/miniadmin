@@ -3,8 +3,10 @@ import { useLayout } from '../../contexts';
 import { useHistory } from 'react-router-dom';
 import { ROUTES_Willkommen } from '../../constants';
 import { Button, notification } from 'antd';
+import { useDispatch } from 'react-redux';
 
 function LoginPage() {
+  const dispatch = useDispatch();
   const layoutContext = useLayout();
   const { fullLoading, onLogin } = layoutContext;
   const history = useHistory();
@@ -13,7 +15,7 @@ function LoginPage() {
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
 
-  const redirectToHome = () => {
+  const redirectToHome = async () => {
     history.push(ROUTES_Willkommen());
   };
 
@@ -25,8 +27,8 @@ function LoginPage() {
       redirectToHome();
     } catch (error) {
       notification.error({
-        message: `Atenção`,
-        description: 'Verifique seus dados e tente novamente.',
+        message: `Error`,
+        description: 'This is error.',
       });
     } finally {
       setLoading(false);

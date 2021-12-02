@@ -112,7 +112,7 @@ export default function LayoutLogged() {
               src="images/man.png"
               className="menu-image"
             />
-              <div className="menu-title"><div>Deine Mitgliedschaft</div> <div>Kostenlos</div></div>
+              <div className="menu-title">Deine Mitgliedschaft</div>
           </div>
         </Menu.Item>
       </Menu>
@@ -128,12 +128,9 @@ export default function LayoutLogged() {
           width="300"
           zeroWidthTriggerStyle={{ top: 10, height: 47 }}
           onBreakpoint={(broken: any) => {
-            // console.log(broken);
           }}
           onCollapse={(collapsed: any, type: any) => {
-            // console.log(collapsed, type);
           }}
-          // style={{backgroundColor:"#208288",width:'300px'}}  `1W90
           style={{
             overflow: 'auto',
             height: '100vh',

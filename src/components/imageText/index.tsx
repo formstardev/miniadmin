@@ -8,8 +8,6 @@ interface ITProps {
     type:number
   }
 export default function imageText(props:ITProps) {
-    
-    // if(props.type == 1) console.log(props)
     if(props.type == 1){
         return (
             <>
